@@ -1,7 +1,14 @@
 'use client'
 
+import { Roboto_Serif } from "next/font/google"
 import React from "react"
 import Typed from "typed.js"
+
+// const robotoSerif = Roboto_Serif({
+// 	subsets: ["latin"],
+// 	display: "swap",
+// 	variable: "--font-roboto-serif",
+// })
 
 export const AutoTyping = () => {
 	const el = React.useRef(null);
@@ -24,6 +31,6 @@ export const AutoTyping = () => {
 
 	}, [])
 	return <div className="type-wrap">
-		<span ref={el} />
+		<h1 className='text-4xl font-semibold font-mono'><span ref={el} /></h1>
 	</div>
 }
