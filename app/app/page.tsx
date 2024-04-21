@@ -1,4 +1,4 @@
-import { AutoTyping } from "@/components/autotyping/autotyping";
+import { AutoTyping } from "@/components/autotyping";
 import Image from "next/image";
 
 export default function Home() {
