@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import React from "react"
 import Typed from "typed.js"
@@ -8,10 +8,9 @@ export const AutoTyping = () => {
 
 	React.useEffect(() => {
 		const typed = new Typed(el.current, {
-			strings: ['These are the default values...',
-				'You know what you should do?',
-				'Use your own!',
-				'Have a great day!',],
+			strings: ["Welcome to my world of creative innovation.",
+			"Discover my unique, professionally crafted projects.",
+			"Dive into designs that inspire and captivate.",],
 			typeSpeed: 50,
 			backSpeed: 50,
 			loop: true,
