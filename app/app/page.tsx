@@ -1,22 +1,18 @@
 import { AutoTyping } from "@/components/autotyping";
 import ProjectCard from "@/components/project-card";
+import ProjectsPage from "@/components/projects";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import MyNavigation from "@/components/navigation";
 
-interface data {
-  id: "1";
-  title: "Project Title";
-  description: "Project Description";
-  content: "Project Content";
-  image: "Project Image";
-  url: "Project URL";
-  tags: ["Project Tags"];
-} 
 
-export default function Home(data: data) {
+export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <AutoTyping />
-      <ProjectCard {...data} />
+      {/* <ProjectCard {...data} /> */}
+      <ProjectsPage />
+      {/* <MyNavigation /> */}
     </main>
   );
 }

@@ -27,6 +27,7 @@ export default function ProjectCard(props: ProjectCardProps) {
       <div>
         <Image
           src={
+            props.image ||
             "https://th.bing.com/th/id/R.6dadd6a39af8ca284e56354ee099752e?rik=JXGf1AD1SgQOPg&pid=ImgRaw&r=0"
           }
           alt=""
@@ -36,24 +37,22 @@ export default function ProjectCard(props: ProjectCardProps) {
         />
       </div>
       <CardHeader>
-        <CardTitle>Discord Bot</CardTitle>
-        <CardDescription>
-        </CardDescription>
+        <CardTitle>{props.title}t</CardTitle>
+        <CardDescription></CardDescription>
         <div className="flex flex-wrap gap-1">
-          <Badge variant={"outline"}>JavaScript</Badge>
-          <Badge variant={"outline"}>Python</Badge>
-          <Badge variant={"outline"}>Discord</Badge>
-          <Badge variant={"outline"}>Python</Badge>
-          <Badge variant={"outline"}>Discord</Badge>
+          {props.tags.map((tag) => (
+            <Badge key={tag} variant={"outline"}>
+              {tag}
+            </Badge>
+          ))}
         </div>
-      <Separator />
+        <Separator />
       </CardHeader>
       <CardContent>
-        Programming Discord Bot for using in server to help doing simple tasks,
-        improving thinking and coding skills.
+        <p>{props.description}</p>
       </CardContent>
       <CardFooter className="flex justify-end">
-        <a href="https://github.com/Bthcorn/Cpp-Lab">View Project</a>
+        <a href={props.url}>View Project</a>
       </CardFooter>
     </Card>
   );
