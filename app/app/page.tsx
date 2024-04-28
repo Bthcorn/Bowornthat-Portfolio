@@ -4,14 +4,18 @@ import ProjectsPage from "@/components/projects";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import MyNavigation from "@/components/navigation";
+import HeaderNav from "@/components/header";
 
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <AutoTyping />
+    <main className="min-h-screen">
+      <HeaderNav />
+      {/* <AutoTyping /> */}
       {/* <ProjectCard {...data} /> */}
-      <ProjectsPage />
+      <div className="flex flex-col items-center justify-between p-24">
+        <ProjectsPage />
+      </div>
       {/* <MyNavigation /> */}
     </main>
   );
