@@ -77,7 +77,7 @@ export const Data = [
 	},
 ];
 
-export default function ProjectsPage() {
+export default function Projects() {
 	return (
 		<motion.div
 			initial={{ opacity: 0, y: -50 }}

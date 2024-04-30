@@ -16,8 +16,8 @@ export const AutoTyping = () => {
 	React.useEffect(() => {
 		const typed = new Typed(el.current, {
 			strings: ["Welcome to my world of creative innovation.",
-			"Discover my unique, professionally crafted projects.",
-			"Dive into designs that inspire and captivate.",],
+				"Discover my unique, professionally crafted projects.",
+				"Dive into designs that inspire and captivate.",],
 			typeSpeed: 50,
 			backSpeed: 50,
 			loop: true,

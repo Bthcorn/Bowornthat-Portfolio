@@ -23,8 +23,8 @@ export interface ProjectCardProps {
 
 export default function ProjectCard(props: ProjectCardProps) {
   return (
-    <Card className="w-96 h-auto overflow-hidden drop-shadow">
-      <div>
+    <Card className="w-96 h-auto overflow-hidden drop-shadow-md justify-center">
+      <div  className=" flex justify-center pt-8 px-8">
         <Image
           src={
             props.image ||
@@ -33,19 +33,20 @@ export default function ProjectCard(props: ProjectCardProps) {
           alt=""
           width={1600}
           height={1134}
-          className="aspect-square object-cover w-96 md:w-auto max-h-fit hover:scale-105 transition-transform duration-300 ease-in-out"
+          className="aspect-square object-cover w-80 h-80 rounded-md hover:scale-105 transition-transform duration-300 ease-in-out"
         />
       </div>
       <CardHeader>
-        <CardTitle>{props.title}t</CardTitle>
-        <CardDescription></CardDescription>
-        <div className="flex flex-wrap gap-1">
-          {props.tags.map((tag) => (
-            <Badge key={tag} variant={"outline"}>
-              {tag}
-            </Badge>
-          ))}
-        </div>
+        <CardTitle>{props.title}</CardTitle>
+        <CardDescription>
+        </CardDescription>
+          <div className="flex flex-wrap gap-1">
+            {props.tags.map((tag) => (
+              <Badge key={tag} variant={"outline"}>
+                {tag}
+              </Badge>
+            ))}
+          </div>
         <Separator />
       </CardHeader>
       <CardContent>
