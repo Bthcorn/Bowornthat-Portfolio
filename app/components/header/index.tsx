@@ -32,7 +32,7 @@ export default function Header() {
           <div className="border flex justify-end items-end w-1/2">
             <NavigationMenu>
               <NavigationMenuList className="gap-4">
-                <NavigationMenuItem>
+                <NavigationMenuItem className="hidden md:flex ">
                   <Link href="/" legacyBehavior passHref>
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
@@ -41,7 +41,7 @@ export default function Header() {
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
+                <NavigationMenuItem className="hidden md:flex">
                   <Link href="/about" legacyBehavior passHref>
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
@@ -50,19 +50,26 @@ export default function Header() {
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
+                <NavigationMenuItem className="hidden md:flex">
                   <Link href="/education" legacyBehavior passHref>
                     <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
+                      className={navigationMenuTriggerStyle()} 
                     >
                       Education
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
+                <NavigationMenuItem className="md:hidden">
+                  <NavigationMenuTrigger>
+                    <MenuIcon className="w-6 h-6" />
+                  </NavigationMenuTrigger>
+                </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
           </div>
-          {/* <div className="border w-1/3 justify-end">
+          <div>
+          </div>
+          {/* <div className="border w-1/2 flex justify-end">
             <MenuIcon className="w-6 h-6" />
           </div> */}
         </div>
