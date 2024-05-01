@@ -13,7 +13,7 @@ export default function Home() {
       {/* <Header /> */}
       {/* <AutoTyping /> */}
       {/* <ProjectCard {...data} /> */}
-      <div className="flex flex-col items-center justify-between p-24 bg-slate-400">
+      <div className="flex flex-col items-center justify-between p-24">
         <Projects />
       </div>
       {/* <MyNavigation /> */}

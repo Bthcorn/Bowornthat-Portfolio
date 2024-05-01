@@ -23,17 +23,18 @@ export interface ProjectCardProps {
 
 export default function ProjectCard(props: ProjectCardProps) {
   return (
-    <Card className="w-96 h-auto overflow-hidden drop-shadow-md justify-center">
-      <div  className=" flex justify-center pt-8 px-8">
+    <Card className="w-80 sm:w-96 overflow-hidden drop-shadow-md justify-center">
+      <div  className=" flex justify-center pt-7 sm:pt-8 px-7 sm:px-8">
         <Image
           src={
             props.image ||
             "https://th.bing.com/th/id/R.6dadd6a39af8ca284e56354ee099752e?rik=JXGf1AD1SgQOPg&pid=ImgRaw&r=0"
           }
           alt=""
-          width={1600}
-          height={1134}
-          className="aspect-square object-cover w-80 h-80 rounded-md hover:scale-105 transition-transform duration-300 ease-in-out"
+          width={800}
+          height={576}
+          priority
+          className="aspect-square object-cover w-72 sm:w-80 h-72 sm:h-80 rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out"
         />
       </div>
       <CardHeader>

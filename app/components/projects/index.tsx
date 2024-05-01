@@ -84,7 +84,7 @@ export default function Projects() {
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration: 1 }}
 		>
-			<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-items-center gap-y-10">
+			<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-items-center gap-y-10 border border-orange-400">
 				{Data.map((project) => (
 					<ProjectCard key={project.id} {...project} />
 				))}

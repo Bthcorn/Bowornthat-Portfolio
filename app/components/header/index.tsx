@@ -6,41 +6,67 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+  NavigationMenuViewport,
+  NavigationMenuItem,
+  NavigationMenuIndicator,
 } from "../ui/navigation-menu";
-import { NavigationMenuItem } from "@radix-ui/react-navigation-menu";
+// import { NavigationMenuItem } from "@radix-ui/react-navigation-menu";
 import { LinkIcon, MenuIcon } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="z-[999] relative">
+    <header className="relative">
       <motion.div
         initial={{ opacity: 0, y: -50, x: "-50%" }}
         animate={{ opacity: 1, y: 0, x: "-50%" }}
         transition={{ duration: 1 }}
-        className="fixed top-6 left-1/2 w-96 h-14 rounded-lg border border-white border-opacity-40 bg-white bg bg-opacity-100 shadow-lg backdrop:blur-lg sm:w-10/12">
+        className="fixed z-10 top-6 left-1/2 w-96 sm:w-11/12 h-14 rounded-lg border border-white border-opacity-40 bg-white bg bg-opacity-100 shadow-lg backdrop:blur-lg"
+      >
+        <div className="fixed z-20 left-1/2 -translate-x-1/2 w-96 h-full sm:w-11/12 flex items-center justfy-between p-4">
+          <div className="border w-1/2">
+            <h1 className="text-2xl font-bold">Bowornthat C.</h1>
+          </div>
+          <div className="border flex justify-end items-end w-1/2">
+            <NavigationMenu>
+              <NavigationMenuList className="gap-4">
+                <NavigationMenuItem>
+                  <Link href="/" legacyBehavior passHref>
+                    <NavigationMenuLink
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      Home
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <Link href="/about" legacyBehavior passHref>
+                    <NavigationMenuLink
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      About
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <Link href="/education" legacyBehavior passHref>
+                    <NavigationMenuLink
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      Education
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+          </div>
+          {/* <div className="border w-1/3 justify-end">
+            <MenuIcon className="w-6 h-6" />
+          </div> */}
+        </div>
       </motion.div>
-      <div className="fixed top-6 left-1/2 -translate-x-1/2 w-96 h-14 rounded-lg border border-white border-opacity-40 bg-white bg bg-opacity-100 shadow-lg backdrop:blur-lg sm:w-10/12 flex flex-1 items-center justify-between">
-        <h1 className="text-xl font-bold px-2">Bthchth</h1>
-        <NavigationMenu className="">
-          <NavigationMenuList className="flex flex-1 gap-1">
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <NavigationMenuLink>Link</NavigationMenuLink>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>Item Two</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <NavigationMenuLink>Link</NavigationMenuLink>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
-        {/* <LinkIcon className="w-6 h-6" /> */}
-        <MenuIcon className="w-6 h-6" />
-      </div>
     </header>
   );
 }
