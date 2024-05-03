@@ -21,7 +21,7 @@ export interface ProjectCardProps {
   tags: string[];
 }
 
-export default function ProjectCard(props: ProjectCardProps) {
+export const ProjectCard = (props: ProjectCardProps) => {
   return (
     <Card className="w-80 sm:w-96 overflow-hidden drop-shadow-md justify-center">
       <div  className=" flex justify-center pt-7 sm:pt-8 px-7 sm:px-8">
