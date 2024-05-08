@@ -23,7 +23,7 @@ export interface ProjectCardProps {
 
 export const ProjectCard = (props: ProjectCardProps) => {
   return (
-    <Card className="w-80 sm:w-96 overflow-hidden drop-shadow-md justify-center">
+    <Card className="w-80 sm:w-96 overflow-hidden drop-shadow-md justify-center bg-card">
       <div  className=" flex justify-center pt-7 sm:pt-8 px-7 sm:px-8">
         <Image
           src={
@@ -43,7 +43,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
         </CardDescription>
           <div className="flex flex-wrap gap-1">
             {props.tags.map((tag) => (
-              <Badge key={tag} variant={"outline"}>
+              <Badge key={tag} variant={"secondary"}>
                 {tag}
               </Badge>
             ))}

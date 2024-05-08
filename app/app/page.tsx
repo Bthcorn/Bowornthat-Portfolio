@@ -14,19 +14,25 @@ import { SKills } from "@/components/skill";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pl-10 pr-10 md:pl-20 md:pr-20">
       {/* <Header /> */}
       {/* <AutoTyping /> */}
       {/* <ProjectCard {...data} /> */}
-      {/* <div className="flex flex-col h-screen items-center justify-between p-24 border bg-slate-600"> */}
+      {/* <Image
+        src="/blob-scene-haikei.svg"
+        alt=""
+        fill
+        className="flex h-screen object-cover"
+      /> */}
+      {/* <div className="flex flex-col h-full items-center justify-between pl-24 pr-24"> */}
       <Hero />
+      {/* </div> */}
       <AboutMe />
       <Education />
       <Experience />
       <SKills />
       <Projects />
       {/* <Projects /> */}
-      {/* </div> */}
       {/* <MyNavigation /> */}
     </main>
   );

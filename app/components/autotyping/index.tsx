@@ -15,10 +15,10 @@ export const AutoTyping = () => {
 
 	React.useEffect(() => {
 		const typed = new Typed(el.current, {
-			strings: ["Welcome to My Portfolio.",
+			strings: ["Hi! Welcome to My Portfolio.",
 				"I'm Bowornthat Chiangthong.",
-				"I'm Software Engineer.",
-				"I'm Fullstack Developer.",],
+				"I'm 2nd Year Student.",
+				"I'm a Developer.",],
 			typeSpeed: 50,
 			backSpeed: 50,
 			loop: true,
@@ -31,7 +31,7 @@ export const AutoTyping = () => {
 		};
 
 	}, [])
-	return <div className="type-wrap">
-		<h1 className='text-2xl md:text-4xl font-semibold font-mono'><span ref={el} /></h1>
+	return <div className="flex-wrap">
+		<h1 className='text-2xl sm:text-4xl font-semibold font-satoshi'><span ref={el} /></h1>
 	</div>
 }
