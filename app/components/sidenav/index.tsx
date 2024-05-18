@@ -8,14 +8,14 @@ const SlideInNav = () => {
 
   return (
     <div>
-      <button onClick={() => setIsOpen(true)} className="p-2 bg-blue-500 text-white rounded">
+      <Button onClick={() => setIsOpen(true)} variant={'ghost'}>
         Open Menu
-      </button>
+      </Button>
       <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline">Share</Button>
+        <Button variant={'ghost'} className=''>Share</Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-md border-r data-[state=closed]:slide-out-to-right-1/2 data-[state=open]:slide-in-from-right-1/2 translate-x-[0%] h-full">
+      <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <DialogTitle>Share link</DialogTitle>
           <DialogDescription>
@@ -40,7 +40,7 @@ const SlideInNav = () => {
         </div> */}
         <DialogFooter className="sm:justify-start">
           <DialogClose asChild>
-            <Button type="button" variant="secondary">
+            <Button type="button" variant={'ghost'}>
               Close
             </Button>
           </DialogClose>
