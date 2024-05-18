@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Lexend } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
+const lexend = Lexend({ subsets: ["latin"]});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,18 +19,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={'${inter.className} pt-24 //md:pt-24'}>
+      <body className={'font-satoshi'}>
         {/* <div className=" h-dvh bg-slate-400">
         </div> */}
-        {/* <ThemeProvider
+        <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
-          > */}
+          >
         <Header />
         {children}
-        {/* </ThemeProvider> */}
+        </ThemeProvider>
         </body>
     </html>
   );

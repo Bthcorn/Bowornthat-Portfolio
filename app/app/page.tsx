@@ -10,6 +10,7 @@ import { AboutMe } from "@/components/aboutme";
 import { Education } from "@/components/education";
 import { Experience } from "@/components/experience";
 import { SKills } from "@/components/skill";
+import SlideInNav from "@/components/sidenav";
 // import { Nav } from "@/components/hero";
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
       {/* <div className="flex flex-col h-full items-center justify-between pl-24 pr-24"> */}
       <Hero />
       {/* </div> */}
+      {/* <SlideInNav /> */}
       <AboutMe />
       <Education />
       <Experience />
