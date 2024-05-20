@@ -2,18 +2,21 @@
 import React, { useState } from 'react';
 import { Dialog, DialogOverlay, DialogContent, DialogTitle, DialogClose, DialogTrigger, DialogHeader, DialogDescription, DialogFooter } from '../ui/dialog';
 import { Button } from '../ui/button';
+import { AlignJustify, Copy } from 'lucide-react';
+import { Input } from '../ui/input';
+import { Label } from '../ui/label';
 
 const SlideInNav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
-      <Button onClick={() => setIsOpen(true)} variant={'ghost'}>
+      {/* <Button onClick={() => setIsOpen(true)} variant={'ghost'}>
         Open Menu
-      </Button>
+      </Button> */}
       <Dialog>
       <DialogTrigger asChild>
-        <Button variant={'ghost'} className=''>Share</Button>
+        <Button variant={'ghost'} size={'icon'}><AlignJustify /></Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
@@ -22,7 +25,7 @@ const SlideInNav = () => {
             Anyone who has this link will be able to view this.
           </DialogDescription>
         </DialogHeader>
-        {/* <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-2">
           <div className="grid flex-1 gap-2">
             <Label htmlFor="link" className="sr-only">
               Link
@@ -37,7 +40,7 @@ const SlideInNav = () => {
             <span className="sr-only">Copy</span>
             <Copy className="h-4 w-4" />
           </Button>
-        </div> */}
+        </div>
         <DialogFooter className="sm:justify-start">
           <DialogClose asChild>
             <Button type="button" variant={'ghost'}>

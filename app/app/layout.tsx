@@ -5,7 +5,9 @@ import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
-const lexend = Lexend({ subsets: ["latin"]});
+const lexend = Lexend({ subsets: ["latin"],
+  variable: "--font-lexend",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,9 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={lexend.className}>
-        {/* <div className=" h-dvh bg-slate-400">
-        </div> */}
+      <body className=" min-h-screen bg-background font-lexend">
         <ThemeProvider
             attribute="class"
             defaultTheme="system"

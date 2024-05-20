@@ -17,12 +17,14 @@ export default function Home() {
   return (
     <div className="relative flex min-h-screen flex-col bg-background">
       <main className="flex-1 py-6 gap-6">
-        <Hero />
-        <AboutMe />
-        <Education />
-        <Experience />
-        <SKills />
-        <Projects />
+        <div className="container relative">
+          <Hero />
+          <AboutMe />
+          <Education />
+          <Experience />
+          <SKills />
+          <Projects />
+        </div>
       </main>
     </div>
   );
