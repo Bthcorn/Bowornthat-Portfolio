@@ -15,27 +15,15 @@ import SlideInNav from "@/components/sidenav";
 
 export default function Home() {
   return (
-    <main className="min-h-screen pl-10 pr-10 md:pl-20 md:pr-20">
-      {/* <Header /> */}
-      {/* <AutoTyping /> */}
-      {/* <ProjectCard {...data} /> */}
-      {/* <Image
-        src="/blob-scene-haikei.svg"
-        alt=""
-        fill
-        className="flex h-screen object-cover"
-      /> */}
-      {/* <div className="flex flex-col h-full items-center justify-between pl-24 pr-24"> */}
-      <Hero />
-      {/* </div> */}
-      {/* <SlideInNav /> */}
-      <AboutMe />
-      <Education />
-      <Experience />
-      <SKills />
-      <Projects />
-      {/* <Projects /> */}
-      {/* <MyNavigation /> */}
-    </main>
+    <div className="relative flex min-h-screen flex-col bg-background">
+      <main className="flex-1 py-6 gap-6">
+        <Hero />
+        <AboutMe />
+        <Education />
+        <Experience />
+        <SKills />
+        <Projects />
+      </main>
+    </div>
   );
 }

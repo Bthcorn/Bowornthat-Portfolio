@@ -10,6 +10,7 @@ import {
 import Image from "next/image";
 import { Badge } from "../ui/badge";
 import { Separator } from "../ui/separator";
+import { Button } from "../ui/button";
 
 export interface ProjectCardProps {
   id: string;
@@ -54,7 +55,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
         <p>{props.description}</p>
       </CardContent>
       <CardFooter className="flex justify-end">
-        <a href={props.url}>View Project</a>
+        <Button variant={'link'}><a href="https://ui.shadcn.com/docs/components/dialog">View</a></Button>
       </CardFooter>
     </Card>
   );

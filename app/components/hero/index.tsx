@@ -7,10 +7,10 @@ export const Hero = () => {
   return (
     <section className="">
       {/* <ModeToggle /> */}
-      <div className="w-full h-full border flex flex-grow-0 flex-col-reverse md:flex-row-reverse rounded-xl items-center justify-between p-8 bg-card shadow-md">
+      <div className="w-full h-dvh border flex flex-col-reverse md:flex-row-reverse justify-between p-8">
         {/* <ModeToggle /> */}
-        <div className="w-full h-72 bg-[#65BD7D] bg-opacity-70"></div>
-        <div className="w-full bg-[#FBE979] bg-opacity-70">
+        <div className="w-full h-72 bg-opacity-70"></div>
+        <div className="w-2/4 border bg-opacity-70">
           <AutoTyping />
         </div>
       </div>

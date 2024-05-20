@@ -31,50 +31,6 @@ export const Data = [
     url: "",
     tags: ["C++", "Python", "Discord"],
   },
-  {
-    id: "3",
-    title: "React App",
-    description:
-      "Programming Discord Bot for using in server to help doing simple tasks, improving thinking and coding skills.",
-    content: "React App",
-    image:
-      "https://th.bing.com/th/id/R.6dadd6a39af8ca284e56354ee099752e?rik=JXGf1AD1SgQOPg&pid=ImgRaw&r=0",
-    url: "",
-    tags: ["JavaScript", "Python", "Discord"],
-  },
-  {
-    id: "4",
-    title: "Python App",
-    description:
-      "Programming Discord Bot for using in server to help doing simple tasks, improving thinking and coding skills.",
-    content: "Python App",
-    image:
-      "https://th.bing.com/th/id/R.6dadd6a39af8ca284e56354ee099752e?rik=JXGf1AD1SgQOPg&pid=ImgRaw&r=0",
-    url: "",
-    tags: ["JavaScript", "Python", "Discord"],
-  },
-  {
-    id: "5",
-    title: "Java App",
-    description:
-      "Programming Discord Bot for using in server to help doing simple tasks, improving thinking and coding skills.",
-    content: "Java App",
-    image:
-      "https://th.bing.com/th/id/R.6dadd6a39af8ca284e56354ee099752e?rik=JXGf1AD1SgQOPg&pid=ImgRaw&r=0",
-    url: "",
-    tags: ["JavaScript", "Python", "Discord"],
-  },
-  {
-    id: "6",
-    title: "C# App",
-    description:
-      "Programming Discord Bot for using in server to help doing simple tasks, improving thinking and coding skills.",
-    content: "C# App",
-    image:
-      "https://th.bing.com/th/id/R.6dadd6a39af8ca284e56354ee099752e?rik=JXGf1AD1SgQOPg&pid=ImgRaw&r=0",
-    url: "",
-    tags: ["JavaScript", "Python", "Discord"],
-  },
 ];
 
 export const Projects = () => {

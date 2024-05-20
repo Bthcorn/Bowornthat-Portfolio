@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={'font-satoshi'}>
+      <body className={lexend.className}>
         {/* <div className=" h-dvh bg-slate-400">
         </div> */}
         <ThemeProvider
