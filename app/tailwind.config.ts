@@ -18,10 +18,6 @@ const config = {
       },
     },
     extend: {
-      fontFamily: {
-        "satoshi-bold": ['Satoshi-Bold'],
-        "satoshi-light": ['Satoshi-Light'],
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

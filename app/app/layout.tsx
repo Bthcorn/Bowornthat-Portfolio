@@ -4,8 +4,10 @@ import "./globals.css";
 import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
 
-const inter = Inter({ subsets: ["latin"] });
-const lexend = Lexend({ subsets: ["latin"],
+// const inter = Inter({ subsets: ["latin"] });
+const lexend = Lexend({
+  subsets: ["latin"],
+  display: "swap",
   variable: "--font-lexend",
 });
 
