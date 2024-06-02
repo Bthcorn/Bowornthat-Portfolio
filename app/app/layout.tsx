@@ -3,7 +3,9 @@ import { Inter, Lexend } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
-
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+</style>
 // const inter = Inter({ subsets: ["latin"] });
 const lexend = Lexend({
   subsets: ["latin"],
@@ -23,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className=" min-h-screen bg-background font-lexend">
+      <body className={`min-h-screen bg-background ${lexend.className}`}>
         <ThemeProvider
             attribute="class"
             defaultTheme="system"

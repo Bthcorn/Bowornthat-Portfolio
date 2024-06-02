@@ -13,14 +13,15 @@ import {
 } from "../ui/navigation-menu";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Inter, Lexend } from "next/font/google";
+import { Lexend } from "next/font/google";
 import { ModeToggle } from "../theme-mode";
 import SlideInNav from "../sidenav";
 import { useTheme } from "next-themes";
 
 const lexend = Lexend({
   subsets: ["latin"],
-  variable: "--font-lexend"
+  display: "swap",
+  variable: "--font-lexend",
 });
 
 export default function Header() {
@@ -52,7 +53,7 @@ export default function Header() {
               <path d="M238.76 251H214.44L183.72 197.24V251H160.68V161.4H185L215.72 215.16V161.4H238.76V251Z" fill={currentColor} />
               <path fillRule="evenodd" clipRule="evenodd" d="M150 53H194.5C169.923 53 150 72.9233 150 97.5V53ZM194.5 142H150V97.5C150 122.076 169.923 142 194.5 142ZM239 97.5V142H194.5C219.076 142 239 122.076 239 97.5ZM239 97.5V53H194.5C219.076 53 239 72.9233 239 97.5ZM194.5 102.395C197.203 102.395 199.395 100.203 199.395 97.5C199.395 94.7966 197.203 92.605 194.5 92.605C191.797 92.605 189.605 94.7966 189.605 97.5C189.605 100.203 191.797 102.395 194.5 102.395Z" fill={currentColor} />
             </svg>
-            <span className="font-satoshi-bold text-2xl hidden sm:inline-block">Bowornthat C.</span>
+            <span className="font-bold font-lexend text-2xl hidden sm:inline-block">Bowornthat C.</span>
           </Link>
         </div>
         <div className="flex">
