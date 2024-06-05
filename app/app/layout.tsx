@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth md:scroll-auto">
       <body className={`min-h-screen bg-background ${lexend.className}`}>
         <ThemeProvider
           attribute="class"
