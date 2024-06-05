@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 </style>
 // const inter = Inter({ subsets: ["latin"] });
 const lexend = Lexend({
@@ -27,15 +27,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={`min-h-screen bg-background ${lexend.className}`}>
         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-        <Header />
-        {children}
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
         </ThemeProvider>
-        </body>
+      </body>
     </html>
   );
 }

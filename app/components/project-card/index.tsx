@@ -54,7 +54,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
         </div>
       </CardContent>
       <CardFooter className="flex justify-end">
-        <Button variant={'link'}><Link href="https://ui.shadcn.com/docs/components/dialog" className="m-2">View</Link><LucideLinkedin /></Button>
+        <Button variant={'ghost'}><Link href="https://ui.shadcn.com/docs/components/dialog" className="m-2">View</Link><LucideLinkedin /></Button>
       </CardFooter>
     </Card>
   );

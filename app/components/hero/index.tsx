@@ -6,15 +6,25 @@ import { ModeToggle } from "../theme-mode";
 
 export const Hero = () => {
   return (
-    <section className="">
-      <div className="relative w-full h-dvh max-h-fit border flex justify-center md:justify-between p-8">
-        {/* <div className="relative"> */} 
-          <span className="absolute top-10 mb-4 text-7xl font-bold inline-block">Hi!👋🏻</span>
-          <div className="absolute top-60 border bg-opacity-70 text-wrap w-1/2 max-h-fit">
-            <AutoTyping />
-          </div>
+    <section className="w-full mx-auto flex flex-wrap items-center my-8 gap-4 justify-center">
+      <span className="w-full justify-center md:justify-start mb-4 text-7xl font-bold inline-flex">Hi!👋🏻</span>
+      <div className="w-full md:grid gap-x-2 grid-cols-12 flex flex-col justify-center gap-y-2">
+        <div className="border col-span-7 min-h-40 items-center flex justify-center md:justify-start">
+          <AutoTyping />
         </div>
-      {/* </div> */}
+        <div className="col-span-4 col-start-9 flex justify-center m-4 md:m-0">
+          <Image
+            src={
+              "https://th.bing.com/th/id/R.6dadd6a39af8ca284e56354ee099752e?rik=JXGf1AD1SgQOPg&pid=ImgRaw&r=0"
+            }
+            alt=""
+            width={400}
+            height={400}
+            priority
+            className="aspect-square object-cover"
+          />
+        </div>
+      </div>
     </section>
   );
 };
