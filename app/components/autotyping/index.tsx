@@ -11,7 +11,7 @@ export const AutoTyping = () => {
 			strings: ["Welcome to My Portfolio.",
 				"I'm Bowornthat Chiangthong.",
 				"I'm 2nd Year Student.",
-				"I'm a Developer.",],
+			 "I'm a Software Engineering."],
 			typeSpeed: 50,
 			backSpeed: 50,
 			loop: true,
