@@ -2,6 +2,6 @@ import React from 'react'
 
 export const Education = () => {
   return (
-    <div>Education</div>
+    <section className='w-full h-dvh bg-popover flex justify-center'>Education</section>
   )
 }

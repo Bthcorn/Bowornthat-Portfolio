@@ -35,7 +35,7 @@ export const Data = [
 
 export const Projects = () => {
   return (
-    <motion.section>
+    <motion.section className="w-full min-h-fit bg-secondary">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
