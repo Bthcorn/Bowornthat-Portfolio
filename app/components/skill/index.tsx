@@ -10,7 +10,7 @@ export const SKills = () => {
           Skills
         </div>
       </div>
-      <div className='grid grid-cols-1 sm:grid-cols-2'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 '>
         <div>Programming Languages</div>
         <div>Front End Web Development</div>
         <div>Back End Web Development</div>
