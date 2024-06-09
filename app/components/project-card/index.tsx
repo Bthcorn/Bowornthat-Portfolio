@@ -11,7 +11,14 @@ import Image from "next/image";
 import { Badge } from "../ui/badge";
 import { Separator } from "../ui/separator";
 import { Button } from "../ui/button";
-import { ArrowUpRightFromSquare, ArrowUpRightSquareIcon, Github, LinkedinIcon, LucideGithub, LucideLinkedin } from "lucide-react";
+import {
+  ArrowUpRightFromSquare,
+  ArrowUpRightSquareIcon,
+  Github,
+  LinkedinIcon,
+  LucideGithub,
+  LucideLinkedin,
+} from "lucide-react";
 import Link from "next/link";
 
 export interface ProjectCardProps {
@@ -40,22 +47,28 @@ export const ProjectCard = (props: ProjectCardProps) => {
       />
       <CardHeader>
         <CardTitle>{props.title}</CardTitle>
-        <CardDescription>
-          {props.description}
-        </CardDescription>
+        <CardDescription>{props.description}</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="flex flex-wrap gap-2">
           {props.tags.map((tag) => (
-            <Badge key={tag} variant={'default'}>
+            <Badge key={tag} variant={"default"}>
               {tag}
             </Badge>
           ))}
         </div>
       </CardContent>
       <CardFooter className="flex justify-end">
-        <Button variant={'ghost'}><Link href="https://ui.shadcn.com/docs/components/dialog" className="m-2">View</Link><LucideLinkedin /></Button>
+        <Button variant={"ghost"}>
+          <Link
+            href="https://ui.shadcn.com/docs/components/dialog"
+            className="m-2"
+          >
+            View
+          </Link>
+          <LucideLinkedin className="h-[1.2rem] w-[1.2rem]" />
+        </Button>
       </CardFooter>
     </Card>
   );
-}
+};
