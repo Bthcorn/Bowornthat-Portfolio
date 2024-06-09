@@ -16,9 +16,9 @@ export default function Home() {
         <div className="container relative px-4 sm:px-8">
           <Hero />
           <AboutMe />
+          <SKills />
           <Education />
           <Experience />
-          <SKills />
           <Projects />
         </div>
       </main>

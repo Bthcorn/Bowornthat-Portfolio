@@ -6,6 +6,7 @@ import Image from "next/image";
 import { ModeToggle } from "../theme-mode";
 import { Button } from "../ui/button";
 import {
+  ArrowUpRightFromSquareIcon,
   ArrowUpRightIcon,
   DownloadIcon,
   Github,
@@ -16,7 +17,7 @@ import Link from "next/link";
 
 export const Hero = () => {
   return (
-    <section className="relative w-full mx-auto flex flex-wrap items-center my-8 gap-4 justify-center">
+    <section className="relative border w-full flex flex-wrap items-center my-8 md:my-16 gap-4 justify-center">
       <motion.span
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -44,6 +45,7 @@ export const Hero = () => {
       </div>
       <div className="space-y-2 sm:space-y-0 sm:space-x-2 w-full flex flex-col sm:flex-row justify-center md:justify-start items-strech sm:items-center">
         <Button variant={"default"} size={"lg"}>
+          <ArrowUpRightFromSquareIcon className="mr-2 h-[1.2rem] w-[1.2rem]" />
           <p className="font-semibold">Let's Talk</p>
         </Button>
         <Button variant={"secondary"} size={"lg"}>

@@ -6,7 +6,7 @@ export const AboutMe = () => {
   return (
     <section className="w-full min-h-dvh rounded-t-3xl flex flex-col justify-start bg-secondary">
       <div className="h-fit flex flex-col justify-center items-center rounded-md p-6 gap-y-2">
-        <p className="text-secondary-foreground">A little bit</p>
+        <p className="text-secondary-foreground">a little bit</p>
         <div className="text-primary-foreground bg-primary rounded-md font-semibold text-3xl sm:text-4xl md:text-5xl p-3 inline-flex">
           About Me
         </div>
@@ -30,12 +30,12 @@ export const AboutMe = () => {
             for learning, consistency in my efforts, and determination to stay
             updated with the latest technologies and programming techniques.
           </p>
-          <p className="text-muted-foreground">WhyAmISeekingIntership?</p>{" "}
+          <p className="text-muted-foreground">WhyAmISeekingIntership ?</p>{" "}
           <p className="">
-            Internship are crucial for applying theoretical knowledge in
+            Internship is crucial for applying theoretical knowledge in
             real-world environment, allowing for hands-on practice and the
             opportunity to receive valuable feedback. I am eager to improve my
-            programming skills and gain practical experience from internships
+            programming skills and gain practical experience from internship
             that will be essential for my professional growth. Furthermore, it
             enhances collaborative and communication skills which are vital for
             a successful career in software developments.
@@ -46,6 +46,7 @@ export const AboutMe = () => {
             contributing to your company and growing as part of your team.
           </p>
         </div>
+        <p className="flex justify-end mt-8 text-muted-foreground">Bowornthat Chiangthong</p>
       </article>
       <Separator />
     </section>

@@ -35,14 +35,14 @@ export const Data = [
 
 export const Projects = () => {
   return (
-    <motion.section className="w-full min-h-fit bg-secondary">
+    <motion.section className="w-full min-h-dvh bg-secondary">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
         <div>Projects</div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-items-center gap-y-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-y-10">
           {Data.map((project) => (
             <ProjectCard key={project.id} {...project} />
           ))}
