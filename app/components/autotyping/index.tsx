@@ -1,29 +1,35 @@
-'use client'
+"use client";
 
-import React from "react"
-import Typed from "typed.js"
+import React from "react";
+import Typed from "typed.js";
 
 export const AutoTyping = () => {
-	const el = React.useRef(null);
+  const el = React.useRef(null);
 
-	React.useEffect(() => {
-		const typed = new Typed(el.current, {
-			strings: ["Welcome to my world of creative innovation.",
-			"Discover my unique, professionally crafted projects.",
-			"Dive into designs that inspire and captivate.",],
-			typeSpeed: 50,
-			backSpeed: 50,
-			loop: true,
-			showCursor: true,
-			cursorChar: "_",
-		}
-		)
-		return () => {
-			typed.destroy()
-		};
-
-	}, [])
-	return <div className="type-wrap">
-		<span ref={el} />
-	</div>
-}
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: [
+        "Welcome to My Portfolio.",
+        "I'm Bowornthat Chiangthong.",
+        "I'm 2nd Year Student.",
+        "I'm a Software Engineering.",
+      ],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true,
+      showCursor: true,
+      cursorChar: "_",
+      backDelay: 2000,
+    });
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+  return (
+    <div className="text-wrap text-center md:text-left">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold">
+        <span ref={el} />
+      </h1>
+    </div>
+  );
+};
