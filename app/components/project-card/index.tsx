@@ -20,6 +20,7 @@ import {
   LucideLinkedin,
 } from "lucide-react";
 import Link from "next/link";
+import { AspectRatio } from "../ui/aspect-ratio";
 
 export interface ProjectCardProps {
   id: string;
@@ -34,17 +35,18 @@ export interface ProjectCardProps {
 export const ProjectCard = (props: ProjectCardProps) => {
   return (
     <Card className="w-80 sm:w-96 overflow-hidden drop-shadow-md justify-center">
-      <Image
-        src={
-          props.image ||
-          "https://th.bing.com/th/id/R.6dadd6a39af8ca284e56354ee099752e?rik=JXGf1AD1SgQOPg&pid=ImgRaw&r=0"
-        }
-        alt=""
-        width={800}
-        height={576}
-        priority
-        className="aspect-square //aspect-video object-cover"
-      />
+      <AspectRatio ratio={1 / 1}>
+        <Image
+          src={
+            props.image ||
+            "https://th.bing.com/th/id/R.6dadd6a39af8ca284e56354ee099752e?rik=JXGf1AD1SgQOPg&pid=ImgRaw&r=0"
+          }
+          alt=""
+          fill
+          priority
+          className="object-cover"
+        />
+      </AspectRatio>
       <CardHeader>
         <CardTitle>{props.title}</CardTitle>
         <CardDescription>{props.description}</CardDescription>

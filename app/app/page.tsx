@@ -5,7 +5,7 @@ import { Hero } from "@/components/hero";
 import { AboutMe } from "@/components/aboutme";
 import { Education } from "@/components/education";
 import { Experience } from "@/components/experience";
-import { SKills } from "@/components/skill";
+import { SKills } from "@/components/skills";
 import Header from "@/components/header";
 
 export default function Home() {

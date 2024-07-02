@@ -13,6 +13,7 @@ export const AutoTyping = () => {
         "I'm Bowornthat Chiangthong.",
         "I'm 2nd Year Student.",
         "I'm a Software Engineering.",
+        "I'm studying at KMITL.",
       ],
       typeSpeed: 50,
       backSpeed: 50,

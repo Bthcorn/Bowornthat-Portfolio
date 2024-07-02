@@ -1,4 +1,3 @@
-import { BookmarkIcon } from "lucide-react";
 import React from "react";
 import { Separator } from "../ui/separator";
 
@@ -46,7 +45,9 @@ export const AboutMe = () => {
             contributing to your company and growing as part of your team.
           </p>
         </div>
-        <p className="flex justify-end mt-8 text-muted-foreground">Bowornthat Chiangthong</p>
+        <p className="flex justify-end mt-8 text-muted-foreground">
+          Bowornthat Chiangthong
+        </p>
       </article>
       <Separator />
     </section>
