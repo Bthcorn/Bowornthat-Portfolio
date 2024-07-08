@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth md:scroll-auto">
-      <body className={`min-h-screen bg-background ${lexend.className}`}>
+      <body className={`min-h-dvh bg-background ${lexend.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

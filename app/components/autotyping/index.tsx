@@ -28,7 +28,7 @@ export const AutoTyping = () => {
   }, []);
   return (
     <div className="text-wrap text-center md:text-left">
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold">
         <span ref={el} />
       </h1>
     </div>

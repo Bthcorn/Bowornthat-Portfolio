@@ -3,7 +3,7 @@ import { Separator } from "../ui/separator";
 
 export const AboutMe = () => {
   return (
-    <section className="w-full min-h-dvh rounded-t-3xl flex flex-col justify-start bg-secondary">
+    <section className="w-full min-h-dvh rounded-t-3xl flex flex-col justify-start //bg-secondary">
       <div className="h-fit flex flex-col justify-center items-center rounded-md p-6 gap-y-2">
         <p className="text-secondary-foreground">a little bit</p>
         <div className="text-primary-foreground bg-primary rounded-md font-semibold text-3xl sm:text-4xl md:text-5xl p-3 inline-flex">
@@ -49,7 +49,6 @@ export const AboutMe = () => {
           Bowornthat Chiangthong
         </p>
       </article>
-      <Separator />
     </section>
   );
 };
