@@ -1,34 +1,44 @@
 "use client";
 
 import React from "react";
-import { AutoTyping } from "../autotyping";
 import Image from "next/image";
-import { ModeToggle } from "../theme-mode";
 import { Button } from "../ui/button";
 import {
   ArrowUpRightFromSquareIcon,
-  ArrowUpRightIcon,
   DownloadIcon,
   Github,
   LinkedinIcon,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { SkillCard } from "../skill-card";
 
 export const Hero = () => {
   return (
-    <section className="relative border w-full flex flex-wrap items-center my-8 md:my-16 gap-4 justify-center">
-      <motion.span
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="w-full justify-center md:justify-start mb-4 text-7xl font-bold inline-flex"
-      >
+    <section className="relative w-full flex flex-wrap items-center my-8 md:my-16 gap-4 justify-center">
+      <Link href="/sample">Sample</Link>
+      <SkillCard title="Test" icon="" /> 
+      <h1 className="w-full justify-center md:justify-start text-5xl md:text-7xl font-bold inline-flex">
         Hi!👋🏻
-      </motion.span>
+      </h1>
       <div className="w-full md:grid gap-x-2 grid-cols-12 flex flex-col justify-between gap-y-2 mb-2">
-        <div className="border min-h-40 col-span-7 items-center flex justify-center md:justify-start mb-2">
-          <AutoTyping />
+        <div className="min-h-40 h-full col-span-7 flex justify-center md:justify-start mb-2">
+          <div className="text-wrap text-center md:text-left py-8 md:py-12 flex flex-col items-center sm:items-start gap-2">
+            <h1 className="text-3xl md:text-4xl font-semibold scroll-m-20">
+              <span>
+                Welcome to{" "}
+                <span className="underline underline-offset-auto inline-block">
+                  Bowornthat's Portfolio.
+                </span>
+              </span>
+            </h1>
+            <p className="font-light text-foreground text-lg">
+              I'm 2nd Year Student at KMITL.
+            </p>
+            <code className="rounded bg-muted px-[0.3rem] py-[0.2rem] inline-block font-mono text-sm font-semibold max-w-fit">
+              Software Engineering.
+            </code>
+          </div>
         </div>
         <div className="relative col-span-4 col-start-9 flex justify-center md:justify-end sm:mx-auto sm:max-w-sm 2xl:max-w-lg 3xl:max-w-xl overflow-clip rounded-lg">
           <Image
@@ -39,7 +49,7 @@ export const Hero = () => {
             width={400}
             height={400}
             priority
-            className="aspect-square object-cover grayscale w-80 md:w-full min-h-80 rounded"
+            className="aspect-square object-cover grayscale w-72 h-auto rounded-md"
           />
         </div>
       </div>
