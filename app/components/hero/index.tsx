@@ -1,28 +1,29 @@
 "use client";
 
 import React from "react";
-import { AutoTyping } from "../autotyping";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import {
   ArrowUpRightFromSquareIcon,
-  ArrowUpRightIcon,
   DownloadIcon,
   Github,
   LinkedinIcon,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { SkillCard } from "../skill-card";
 
 export const Hero = () => {
   return (
-    <section className="relative border w-full flex flex-wrap items-center my-8 md:my-16 gap-4 justify-center">
+    <section className="relative w-full flex flex-wrap items-center my-8 md:my-16 gap-4 justify-center">
+      <Link href="/sample">Sample</Link>
+      <SkillCard title="Test" icon="" /> 
       <h1 className="w-full justify-center md:justify-start text-5xl md:text-7xl font-bold inline-flex">
         Hi!👋🏻
       </h1>
       <div className="w-full md:grid gap-x-2 grid-cols-12 flex flex-col justify-between gap-y-2 mb-2">
-        <div className="border min-h-40 h-full col-span-7 flex justify-center md:justify-start mb-2">
-          <div className="text-wrap text-center md:text-left py-8 md:py-12 flex flex-col gap-2">
+        <div className="min-h-40 h-full col-span-7 flex justify-center md:justify-start mb-2">
+          <div className="text-wrap text-center md:text-left py-8 md:py-12 flex flex-col items-center sm:items-start gap-2">
             <h1 className="text-3xl md:text-4xl font-semibold scroll-m-20">
               <span>
                 Welcome to{" "}
@@ -48,7 +49,7 @@ export const Hero = () => {
             width={400}
             height={400}
             priority
-            className="aspect-square object-cover grayscale w-80 md:w-full min-h-80 rounded"
+            className="aspect-square object-cover grayscale w-72 h-auto rounded-md"
           />
         </div>
       </div>

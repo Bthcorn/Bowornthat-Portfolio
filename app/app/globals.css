@@ -1,8 +1,9 @@
+@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css');
+
 @tailwind base;
   @tailwind components;
   @tailwind utilities;
 
-  
   
   @layer base {
     :root {
