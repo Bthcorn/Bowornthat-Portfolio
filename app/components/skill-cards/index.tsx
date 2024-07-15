@@ -8,7 +8,7 @@ interface SkillCardProps {
 
 export const SkillCards = (props: SkillCardProps) => {
   return (
-    <Card className="drop-shadow-md bg-secondary">
+    <Card>
       <CardHeader>
         <CardTitle>
           <p>{props.title}</p>

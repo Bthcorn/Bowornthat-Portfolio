@@ -32,20 +32,22 @@ const Skill = {
   ],
 }
 
-const skills2 = skilltech;
+
 
 export const SKills = () => {
   return (
     <section className="w-full min-h-dvh flex flex-col //bg-secondary">
-      <div className="h-fit flex flex-col justify-center items-center rounded-md p-6 gap-y-2">
-        <p className="text-secondary-foreground">tech</p>
-        <div className="text-primary-foreground bg-primary rounded-md font-bold text-3xl md:text-4xl p-3 inline-flex">
-          Skills
+      <div className="h-fit flex flex-col justify-start sm:justify-center items-center rounded-md p-6 gap-y-2">
+        <p className="text-muted-foreground">tech</p>
+        <div className="border-b-4 border-primary w-full sm:w-auto">
+          <h1 className="font-bold font text-3xl md:text-4xl inline-flex p-3">
+            Skills
+          </h1>
         </div>
       </div>
-      <div className="w-full h-fit flex flex-col gap-y-4 p-8 sm:p-12 md:p-20">
+      <div className="w-full h-fit flex flex-col gap-y-4 p-8 sm:p-12">
         {
-          skills2.map((skill, index) => (
+          skilltech.map((skill, index) => (
             <SkillCards key={index} {...skill} />
           ))
         }

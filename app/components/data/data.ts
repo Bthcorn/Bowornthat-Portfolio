@@ -94,12 +94,20 @@ export const skilltech = [
     ],  
   },
   {
-    title: "DevOps",
+    title: "Others",
     skills: [
       {
         title: "Docker",
         icon: "devicon-docker-plain",
       },
+      {
+        title: "Unreal Engine",
+        icon: "devicon-unrealengine-original",
+      },
+      {
+        title: "Thunder Client",
+        icon: "devicon-thunderclient-plain",
+      }
     ],
   }
 ];

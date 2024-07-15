@@ -3,14 +3,14 @@ import { Separator } from "../ui/separator";
 
 export const AboutMe = () => {
   return (
-    <section className="w-full min-h-dvh rounded-t-3xl flex flex-col justify-start //bg-secondary">
-      <div className="h-fit flex flex-col justify-center items-center rounded-md p-6 gap-y-2">
-        <p className="text-secondary-foreground">a little bit</p>
-        <div className="text-primary-foreground bg-primary rounded-md font-bold text-3xl md:text-4xl p-3 inline-flex">
-          About Me
+    <section className="w-full min-h-dvh rounded-t-3xl flex flex-col //bg-secondary">
+      <div className="h-fit flex flex-col justify-start sm:justify-center items-center rounded-md p-6 gap-y-2">
+        <p className="text-muted-foreground">a little bit</p>
+        <div className="border-b-4 border-primary w-full sm:w-auto">
+          <h1 className="font-bold font text-3xl md:text-4xl inline-flex p-3">About Me</h1>
         </div>
       </div>
-      <article className="w-full h-fit text-wrap whitespace-normal p-8 sm:p-12 md:p-20 text-seconday-foreground font-light text-md sm:text-lg leading-loose tracking-wide">
+      <article className="w-full h-fit text-wrap whitespace-normal p-8 sm:p-12 text-seconday-foreground font-light text-md sm:text-lg leading-loose tracking-wide">
         <p className="flex md:hidden leading-relaxed">
           “Hello! I'm a Second-Year Software Engineering student at KMITL, eager
           to advance my coding skills and stay updated with new technologies.

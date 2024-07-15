@@ -11,13 +11,10 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { SkillCard } from "../skill-card";
 
 export const Hero = () => {
   return (
     <section className="relative w-full flex flex-wrap items-center my-8 md:my-16 gap-4 justify-center">
-      <Link href="/sample">Sample</Link>
-      <SkillCard title="Test" icon="" /> 
       <h1 className="w-full justify-center md:justify-start text-5xl md:text-7xl font-bold inline-flex">
         Hi!👋🏻
       </h1>

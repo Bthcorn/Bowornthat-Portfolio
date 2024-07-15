@@ -1,16 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import {
-  Dialog,
-  DialogOverlay,
-  DialogContent,
-  DialogTitle,
-  DialogClose,
-  DialogTrigger,
-  DialogHeader,
-  DialogDescription,
-  DialogFooter,
-} from "../ui/dialog";
 import { Button } from "../ui/button";
 import { AlignJustify, Copy } from "lucide-react";
 import { Input } from "../ui/input";
@@ -23,9 +12,9 @@ export const SlideInNav = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline">Open</Button>
+        <Button variant={'ghost'}>Open</Button>
       </SheetTrigger>
-      <SheetContent side={'right'}>
+      <SheetContent side={'bottom'}>
         <SheetHeader>
           <SheetTitle>Edit profile</SheetTitle>
           <SheetDescription>
