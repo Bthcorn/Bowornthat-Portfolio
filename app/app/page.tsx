@@ -6,6 +6,7 @@ import { Experience } from "@/components/experience";
 import { SKills } from "@/components/skills";
 import Header from "@/components/header";
 import { Separator } from "@/components/ui/separator";
+import { Details } from "@/components/details";
 
 export default function Home() {
   return (
@@ -17,10 +18,12 @@ export default function Home() {
           <Separator />
           <AboutMe />
           <Separator />
+          <Details />
+          <Separator />
           <SKills />
           <Separator />
-          <Education />
-          <Experience />
+          {/* <Education /> */}
+          {/* <Experience /> */}
           <Projects />
         </div>
       </main>

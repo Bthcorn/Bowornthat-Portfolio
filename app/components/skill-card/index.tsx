@@ -13,17 +13,17 @@ export interface SkillProps {
 
 export const SkillCard = (props: SkillProps) => {
   return (
-    <TooltipProvider>
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <a>
-            <i className="devicon-nextjs-plain text-5xl md:text-8xl cursor-pointer"></i>
-          </a>
-        </TooltipTrigger>
-        <TooltipContent>
-          <p>Next.js</p>
-        </TooltipContent>
-      </Tooltip>
-    </TooltipProvider>
+    <div className="m-4">
+      <TooltipProvider>
+        <Tooltip>
+          <TooltipTrigger>
+            <i className={`${props.icon} text-5xl sm:text-7xl`}></i>
+          </TooltipTrigger>
+          <TooltipContent>
+            <Tooltip>{props.title}</Tooltip>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
+    </div>
   );
 };
