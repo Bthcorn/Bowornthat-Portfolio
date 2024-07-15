@@ -35,7 +35,7 @@ export interface ProjectCardProps {
 export const ProjectCard = (props: ProjectCardProps) => {
   return (
     <Card className="w-80 sm:w-96 overflow-hidden drop-shadow-md justify-center">
-      <AspectRatio ratio={1 / 1}>
+      <AspectRatio ratio={5 / 4}>
         <Image
           src={
             props.image ||

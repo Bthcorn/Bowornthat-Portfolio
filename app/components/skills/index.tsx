@@ -39,7 +39,7 @@ export const SKills = () => {
     <section className="w-full min-h-dvh flex flex-col //bg-secondary">
       <div className="h-fit flex flex-col justify-center items-center rounded-md p-6 gap-y-2">
         <p className="text-secondary-foreground">tech</p>
-        <div className="text-primary-foreground bg-primary rounded-md font-semibold text-3xl md:text-4xl p-3 inline-flex">
+        <div className="text-primary-foreground bg-primary rounded-md font-bold text-3xl md:text-4xl p-3 inline-flex">
           Skills
         </div>
       </div>
@@ -49,7 +49,6 @@ export const SKills = () => {
             <SkillCards key={index} {...skill} />
           ))
         }
-        {/* <SkillCards {...Skill} /> */}
       </div>
     </section>
   );

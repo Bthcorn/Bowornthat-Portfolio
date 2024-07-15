@@ -24,7 +24,7 @@ export const Hero = () => {
       <div className="w-full md:grid gap-x-2 grid-cols-12 flex flex-col justify-between gap-y-2 mb-2">
         <div className="min-h-40 h-full col-span-7 flex justify-center md:justify-start mb-2">
           <div className="text-wrap text-center md:text-left py-8 md:py-12 flex flex-col items-center sm:items-start gap-2">
-            <h1 className="text-3xl md:text-4xl font-semibold scroll-m-20">
+            <h1 className="text-3xl md:text-4xl font-bold scroll-m-20">
               <span>
                 Welcome to{" "}
                 <span className="underline underline-offset-auto inline-block">
