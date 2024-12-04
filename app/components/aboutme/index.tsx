@@ -23,17 +23,17 @@ export const AboutMe = () => {
       </div>
       <article className="text-seconday-foreground text-md h-fit w-full max-w-3xl whitespace-normal text-wrap p-8 font-light leading-loose tracking-wide sm:p-12 sm:text-lg">
         <p className="flex leading-relaxed md:hidden">
-          “Hello! I'm a Second-Year Software Engineering student at KMITL, eager
-          to advance my coding skills and stay updated with new technologies.
-          I'm looking for internships to apply my knowledge and gain practical
-          experience. My strengths include a strong passion for learning and
-          consistent effort. I'm excited to contribute to your team. Please
-          contact me if my portfolio interests you.”
+          “Hello! I&apos;m a Second-Year Software Engineering student at KMITL,
+          eager to advance my coding skills and stay updated with new
+          technologies. I&apos;m looking for internships to apply my knowledge
+          and gain practical experience. My strengths include a strong passion
+          for learning and consistent effort. I&apos;m excited to contribute to
+          your team. Please contact me if my portfolio interests you.”
         </p>
         <div className="hidden flex-col gap-y-4 whitespace-normal leading-relaxed md:flex">
           <p className="">
-            Hello! I’m currently Second-Year Software Engineering student at
-            KMITL. I am experienced with programming logic, skills, and
+            Hello! I&apos;m currently Second-Year Software Engineering student
+            at KMITL. I am experienced with programming logic, skills, and
             background. I am committed to continually improving my coding skills
             and knowledge in order to develop good software solutions that
             improve customer experiences. My strengths includes a deep passion
@@ -51,7 +51,7 @@ export const AboutMe = () => {
             a successful career in software developments.
           </p>
           <p className="">
-            I hope you find my portfolio compelling. If so, please don't
+            I hope you find my portfolio compelling. If so, please don&apos;t
             hesitate to contact me. I am looking forward to the possibility of
             contributing to your company and growing as part of your team.
           </p>
