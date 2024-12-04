@@ -1,4 +1,3 @@
-import { SkillCard } from "@/components/skill-card";
 import Link from "next/link";
 import React from "react";
 

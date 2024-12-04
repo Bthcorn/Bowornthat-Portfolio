@@ -1,10 +1,10 @@
 "use client";
 import { ProjectCard, ProjectCardProps } from "../project-card";
 import React from "react";
-import { MotionConfig, motion } from "framer-motion";
 import { Button } from "../ui/button";
-import { ArrowUpRightSquare, DownloadIcon } from "lucide-react";
+import { ArrowUpRightSquare } from "lucide-react";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 export interface Projects {
   props: ProjectCardProps[];
@@ -38,27 +38,34 @@ export const Data = [
 
 export const Projects = () => {
   return (
-    <section className="w-full min-h-dvh rounded-t-3xl flex flex-col justify-start //bg-secondary">
-      <div className="h-fit flex flex-col justify-center items-center rounded-md p-6 gap-y-2">
-        <p className="text-secondary-foreground">portfolio</p>
-        <div className="text-primary-foreground bg-primary rounded-md font-bold text-3xl md:text-4xl p-3 inline-flex">
-          My Recent Work
+    <motion.section
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{ y: 20, opacity: 1 }}
+      transition={{ ease: "easeInOut", duration: 1 }}
+      viewport={{ once: true }}
+      className="mb-8 flex min-h-screen w-full flex-col rounded-3xl bg-secondary"
+    >
+      <div className="flex h-fit flex-col items-center justify-start gap-y-2 rounded-md p-6 sm:justify-center">
+        <p className="text-muted-foreground">portfolio</p>
+        <div className="w-full border-b-4 border-primary sm:w-auto">
+          <h1 className="font inline-flex p-3 text-3xl font-bold md:text-4xl">
+            My Recent Work
+          </h1>
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-y-10 p-8 sm:p-12 md:p-20">
-        {Data.map((project) => (
-          <ProjectCard key={project.id} {...project} />
-        ))}
-      </div>
-      <Button variant={"outline"} size={"lg"}>
+      <div className="flex w-full flex-col items-center p-8 md:p-12">
+        <div className="mb-8 grid grid-cols-1 justify-items-center gap-y-10 lg:grid-cols-2">
+          {Data.map((project) => (
+            <ProjectCard key={project.id} {...project} />
+          ))}
+        </div>
+        <Button variant={"default"} size={"lg"}>
           <ArrowUpRightSquare className="mr-2 h-[1.2rem] w-[1.2rem]" />
-          <Link
-            href="/projects"
-            className="font-sesmibold"
-          >
+          <Link href="/projects" className="font-sesmibold">
             View More
           </Link>
         </Button>
-    </section>
+      </div>
+    </motion.section>
   );
 };

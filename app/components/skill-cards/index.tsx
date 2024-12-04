@@ -1,5 +1,6 @@
 import { SkillCard, SkillProps } from "../skill-card";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { motion } from "motion/react";
 
 interface SkillCardProps {
   title: string;
@@ -8,7 +9,7 @@ interface SkillCardProps {
 
 export const SkillCards = (props: SkillCardProps) => {
   return (
-    <Card className="drop-shadow-md bg-secondary">
+    <Card>
       <CardHeader>
         <CardTitle>
           <p>{props.title}</p>

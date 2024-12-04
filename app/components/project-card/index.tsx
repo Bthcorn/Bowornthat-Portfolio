@@ -11,14 +11,7 @@ import Image from "next/image";
 import { Badge } from "../ui/badge";
 import { Separator } from "../ui/separator";
 import { Button } from "../ui/button";
-import {
-  ArrowUpRightFromSquare,
-  ArrowUpRightSquareIcon,
-  Github,
-  LinkedinIcon,
-  LucideGithub,
-  LucideLinkedin,
-} from "lucide-react";
+import { LucideLinkedin } from "lucide-react";
 import Link from "next/link";
 import { AspectRatio } from "../ui/aspect-ratio";
 
@@ -34,7 +27,7 @@ export interface ProjectCardProps {
 
 export const ProjectCard = (props: ProjectCardProps) => {
   return (
-    <Card className="w-80 sm:w-96 overflow-hidden drop-shadow-md justify-center">
+    <Card className="w-80 sm:w-96 overflow-hidden justify-center mx-4">
       <AspectRatio ratio={5 / 4}>
         <Image
           src={

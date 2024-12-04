@@ -3,8 +3,9 @@ import { Lexend } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-</style>
+  @import
+  url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+</style>;
 
 const lexend = Lexend({
   subsets: ["latin"],
@@ -23,7 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth md:scroll-auto">
+    <html
+      lang="en"
+      className="scroll-smooth md:scroll-auto"
+      suppressHydrationWarning
+    >
       <body className={`min-h-dvh bg-background ${lexend.className}`}>
         <ThemeProvider
           attribute="class"
