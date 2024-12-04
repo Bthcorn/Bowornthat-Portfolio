@@ -24,14 +24,14 @@ export const skilltech = [
         title: "TypeScript",
         icon: "devicon-typescript-plain",
       },
-      {
-        title: "Golang",
-        icon: "devicon-go-plain",
-      },
-      {
-        title: "Java",
-        icon: "devicon-java-plain",
-      },
+      // {
+      //   title: "Golang",
+      //   icon: "devicon-go-plain",
+      // },
+      // {
+      //   title: "Java",
+      //   icon: "devicon-java-plain",
+      // },
     ],
   },
   {
@@ -67,8 +67,12 @@ export const skilltech = [
         icon: "devicon-express-original",
       },
       {
+        title: "FastAPI",
+        icon: "devicon-fastapi-plain",
+      },
+      {
         title: "Axios",
-        icon: "devicon-axios-plain",
+        icon: "devicon-axios-plain-wordmark",
       },
       {
         title: "Prisma",
@@ -91,7 +95,7 @@ export const skilltech = [
         title: "PostgreSQL",
         icon: "devicon-postgresql-plain",
       },
-    ],  
+    ],
   },
   {
     title: "Others",

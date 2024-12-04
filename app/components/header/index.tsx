@@ -11,7 +11,6 @@ import {
   NavigationMenuItem,
   NavigationMenuIndicator,
 } from "../ui/navigation-menu";
-import { motion } from "framer-motion";
 import Link from "next/link";
 import { Lexend } from "next/font/google";
 import { ModeToggle } from "../theme-mode";
@@ -41,9 +40,9 @@ export default function Header() {
   }, [theme]);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 supports-[backdrop-filter]:bg-background/60 backdrop-blur backdrop">
+    <header className="backdrop sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center justify-between">
-        <div className="mr-4 //hidden flex">
+        <div className="//hidden mr-4 flex">
           <Link href={"/"} className="flex items-center space-x-2">
             <svg
               width="3em"
@@ -71,13 +70,12 @@ export default function Header() {
                 fill={currentColor}
               />
             </svg>
-            <span className="font-bold text-2xl hidden sm:inline-block">
+            <span className="hidden text-2xl font-bold sm:inline-block">
               Bowornthat C.
             </span>
           </Link>
         </div>
         <div className="flex">
-          <SlideInNav />
           <ModeToggle />
         </div>
       </div>

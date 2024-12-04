@@ -1,17 +1,28 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import { Separator } from "../ui/separator";
+import { motion } from "motion/react";
 
 export const AboutMe = () => {
   return (
-    <section className="w-full min-h-dvh rounded-t-3xl flex flex-col //bg-secondary">
-      <div className="h-fit flex flex-col justify-start sm:justify-center items-center rounded-md p-6 gap-y-2">
+    <motion.section
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{ y: 20, opacity: 1 }}
+      transition={{ ease: "easeInOut", duration: 1 }}
+      viewport={{ once: true }}
+      className="mb-8 flex min-h-screen w-full flex-col items-center rounded-3xl bg-secondary"
+    >
+      <div className="flex h-fit flex-col items-center justify-start gap-y-2 rounded-md p-6 sm:justify-center">
         <p className="text-muted-foreground">a little bit</p>
-        <div className="border-b-4 border-primary w-full sm:w-auto">
-          <h1 className="font-bold font text-3xl md:text-4xl inline-flex p-3">About Me</h1>
+        <div className="w-full sm:w-auto">
+          <h1 className="font inline-flex p-3 text-3xl font-bold md:text-4xl">
+            About Me
+          </h1>
+          <div className="border-b-4 border-primary"></div>
         </div>
       </div>
-      <article className="w-full h-fit text-wrap whitespace-normal p-8 sm:p-12 text-seconday-foreground font-light text-md sm:text-lg leading-loose tracking-wide">
-        <p className="flex md:hidden leading-relaxed">
+      <article className="text-seconday-foreground text-md h-fit w-full max-w-3xl whitespace-normal text-wrap p-8 font-light leading-loose tracking-wide sm:p-12 sm:text-lg">
+        <p className="flex leading-relaxed md:hidden">
           “Hello! I'm a Second-Year Software Engineering student at KMITL, eager
           to advance my coding skills and stay updated with new technologies.
           I'm looking for internships to apply my knowledge and gain practical
@@ -19,7 +30,7 @@ export const AboutMe = () => {
           consistent effort. I'm excited to contribute to your team. Please
           contact me if my portfolio interests you.”
         </p>
-        <div className="hidden md:flex flex-col gap-y-4 leading-relaxed whitespace-normal">
+        <div className="hidden flex-col gap-y-4 whitespace-normal leading-relaxed md:flex">
           <p className="">
             Hello! I’m currently Second-Year Software Engineering student at
             KMITL. I am experienced with programming logic, skills, and
@@ -45,10 +56,10 @@ export const AboutMe = () => {
             contributing to your company and growing as part of your team.
           </p>
         </div>
-        <p className="flex justify-end mt-8 text-muted-foreground">
+        <p className="mt-8 flex justify-end text-muted-foreground">
           Bowornthat Chiangthong
         </p>
       </article>
-    </section>
+    </motion.section>
   );
 };

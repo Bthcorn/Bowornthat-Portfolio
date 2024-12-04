@@ -1,10 +1,10 @@
 "use client";
 import { ProjectCard, ProjectCardProps } from "../project-card";
 import React from "react";
-import { motion } from "framer-motion";
 import { Button } from "../ui/button";
 import { ArrowUpRightSquare } from "lucide-react";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 export interface Projects {
   props: ProjectCardProps[];
@@ -38,17 +38,23 @@ export const Data = [
 
 export const Projects = () => {
   return (
-    <section className="w-full min-h-dvh rounded-t-3xl flex flex-col mb-8">
-      <div className="h-fit flex flex-col justify-start sm:justify-center items-center rounded-md p-6 gap-y-2">
+    <motion.section
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{ y: 20, opacity: 1 }}
+      transition={{ ease: "easeInOut", duration: 1 }}
+      viewport={{ once: true }}
+      className="mb-8 flex min-h-screen w-full flex-col rounded-3xl bg-secondary"
+    >
+      <div className="flex h-fit flex-col items-center justify-start gap-y-2 rounded-md p-6 sm:justify-center">
         <p className="text-muted-foreground">portfolio</p>
-        <div className="border-b-4 border-primary w-full sm:w-auto">
-          <h1 className="font-bold font text-3xl md:text-4xl inline-flex p-3">
+        <div className="w-full border-b-4 border-primary sm:w-auto">
+          <h1 className="font inline-flex p-3 text-3xl font-bold md:text-4xl">
             My Recent Work
           </h1>
         </div>
       </div>
-      <div className="w-full p-8 md:p-12 flex flex-col items-center">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-10 justify-items-center mb-8">
+      <div className="flex w-full flex-col items-center p-8 md:p-12">
+        <div className="mb-8 grid grid-cols-1 justify-items-center gap-y-10 lg:grid-cols-2">
           {Data.map((project) => (
             <ProjectCard key={project.id} {...project} />
           ))}
@@ -60,6 +66,6 @@ export const Projects = () => {
           </Link>
         </Button>
       </div>
-    </section>
+    </motion.section>
   );
 };

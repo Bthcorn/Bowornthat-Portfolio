@@ -11,9 +11,7 @@ import Image from "next/image";
 import { Badge } from "../ui/badge";
 import { Separator } from "../ui/separator";
 import { Button } from "../ui/button";
-import {
-  LucideLinkedin,
-} from "lucide-react";
+import { LucideLinkedin } from "lucide-react";
 import Link from "next/link";
 import { AspectRatio } from "../ui/aspect-ratio";
 

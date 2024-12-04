@@ -1,5 +1,6 @@
 import { SkillCard, SkillProps } from "../skill-card";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { motion } from "motion/react";
 
 interface SkillCardProps {
   title: string;

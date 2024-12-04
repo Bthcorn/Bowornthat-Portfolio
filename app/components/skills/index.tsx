@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import { SkillCards } from "../skill-cards";
 import { skilltech } from "../data/data";
+import { motion } from "motion/react";
 
 const Skill = {
   title: "Frontend",
@@ -30,28 +32,32 @@ const Skill = {
       icon: "devicon-css3-plain",
     },
   ],
-}
-
-
+};
 
 export const SKills = () => {
   return (
-    <section className="w-full min-h-dvh flex flex-col //bg-secondary">
-      <div className="h-fit flex flex-col justify-start sm:justify-center items-center rounded-md p-6 gap-y-2">
+    <motion.section
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{ y: 20, opacity: 1 }}
+      transition={{ ease: "easeInOut", duration: 1 }}
+      viewport={{ once: true }}
+      className="mb-8 flex min-h-dvh w-full flex-col items-center rounded-3xl bg-secondary"
+    >
+      <div className="flex h-fit flex-col items-center justify-start gap-y-2 rounded-md p-6 sm:justify-center">
         <p className="text-muted-foreground">tech</p>
-        <div className="border-b-4 border-primary w-full sm:w-auto">
-          <h1 className="font-bold font text-3xl md:text-4xl inline-flex p-3">
+        <div className="w-full border-b-4 border-primary sm:w-auto">
+          <h1 className="font inline-flex p-3 text-3xl font-bold md:text-4xl">
             Skills
           </h1>
         </div>
       </div>
-      <div className="w-full h-fit flex flex-col gap-y-4 p-8 sm:p-12">
-        {
-          skilltech.map((skill, index) => (
-            <SkillCards key={index} {...skill} />
-          ))
-        }
+      <div className="flex h-fit w-full max-w-3xl flex-col gap-y-4 p-8 sm:p-12">
+        {skilltech.map((skill, index) => (
+          // <motion.div whileHover={{ scale: 1.1 }} key={index}>
+          <SkillCards key={index} {...skill} />
+          // </motion.div>
+        ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
