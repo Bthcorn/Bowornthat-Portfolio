@@ -4,7 +4,16 @@ import { Button } from "../ui/button";
 import { AlignJustify, Copy } from "lucide-react";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
-import { Sheet, SheetClose, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "../ui/sheet";
 
 export const SlideInNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,13 +21,13 @@ export const SlideInNav = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant={'ghost'}>Open</Button>
+        <Button variant={"ghost"}>Open</Button>
       </SheetTrigger>
-      <SheetContent side={'bottom'}>
+      <SheetContent side={"bottom"}>
         <SheetHeader>
           <SheetTitle>Edit profile</SheetTitle>
           <SheetDescription>
-            Make changes to your profile here. Click save when you're done.
+            Make changes to your profile here. Click save when you&apos;re done.
           </SheetDescription>
         </SheetHeader>
         <div className="grid gap-4 py-4">
