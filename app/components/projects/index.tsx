@@ -44,12 +44,13 @@ export const Projects = () => {
       transition={{ ease: "easeInOut", duration: 1 }}
       viewport={{ once: true }}
       className="mb-8 flex min-h-screen w-full flex-col rounded-3xl bg-secondary"
+      id="projects"
     >
       <div className="flex h-fit flex-col items-center justify-start gap-y-2 rounded-md p-6 sm:justify-center">
         <p className="text-muted-foreground">portfolio</p>
         <div className="w-full border-b-4 border-primary sm:w-auto">
           <h1 className="font inline-flex p-3 text-3xl font-bold md:text-4xl">
-            My Recent Work
+            MY RECENT WORK
           </h1>
         </div>
       </div>

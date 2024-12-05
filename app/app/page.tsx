@@ -7,6 +7,7 @@ import { SKills } from "@/components/skills";
 import Header from "@/components/header";
 import { Separator } from "@/components/ui/separator";
 import { Details } from "@/components/details";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Projects />
         {/* </div> */}
       </main>
+      <Footer />
     </div>
   );
 }

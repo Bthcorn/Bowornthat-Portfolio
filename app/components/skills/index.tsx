@@ -42,20 +42,19 @@ export const SKills = () => {
       transition={{ ease: "easeInOut", duration: 1 }}
       viewport={{ once: true }}
       className="mb-8 flex min-h-dvh w-full flex-col items-center rounded-3xl bg-secondary"
+      id="skills"
     >
       <div className="flex h-fit flex-col items-center justify-start gap-y-2 rounded-md p-6 sm:justify-center">
         <p className="text-muted-foreground">tech</p>
         <div className="w-full border-b-4 border-primary sm:w-auto">
           <h1 className="font inline-flex p-3 text-3xl font-bold md:text-4xl">
-            Skills
+            SKILLS
           </h1>
         </div>
       </div>
-      <div className="flex h-fit w-full max-w-3xl flex-col gap-y-4 p-8 sm:p-12">
+      <div className="flex h-fit w-full flex-col gap-4 p-8 sm:p-12 lg:max-w-3xl">
         {skilltech.map((skill, index) => (
-          // <motion.div whileHover={{ scale: 1.1 }} key={index}>
           <SkillCards key={index} {...skill} />
-          // </motion.div>
         ))}
       </div>
     </motion.section>
