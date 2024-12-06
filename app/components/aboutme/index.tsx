@@ -7,7 +7,7 @@ export const AboutMe = () => {
   return (
     <motion.section
       initial={{ y: 100, opacity: 0 }}
-      whileInView={{ y: 20, opacity: 1 }}
+      whileInView={{ y: 0, opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 1 }}
       viewport={{ once: true }}
       className="mb-8 flex min-h-screen w-full flex-col items-center rounded-3xl bg-secondary"
