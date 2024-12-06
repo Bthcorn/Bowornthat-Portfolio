@@ -39,12 +39,13 @@ export const AboutMe = () => {
             // viewport={{ once: true }}
           >
             Hello! I&apos;m currently Second-Year Software Engineering student
-            at KMITL. I am experienced with programming logic, skills, and
-            background. I am committed to continually improving my coding skills
-            and knowledge in order to develop good software solutions that
-            improve customer experiences. My strengths includes a deep passion
-            for learning, consistency in my efforts, and determination to stay
-            updated with the latest technologies and programming techniques.
+            at KMITL. <br /> I am experienced with programming logic, skills,
+            and background. I am committed to continually improving my coding
+            skills and knowledge in order to develop good software solutions
+            that improve customer experiences. My strengths includes a deep
+            passion for learning, consistency in my efforts, and determination
+            to stay updated with the latest technologies and programming
+            techniques.
           </motion.p>
           <motion.p
             initial={{ y: 100, opacity: 0 }}

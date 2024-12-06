@@ -61,12 +61,9 @@ export const Details = () => {
                 </div>
                 <div className="space-y-1">
                   <Label htmlFor="gmail">Facebook</Label>
-                  <Button
-                    variant={"link"}
-                    className="w-full justify-start rounded-md bg-secondary px-4 py-2"
-                  >
+                  <div className="rounded-md bg-secondary px-4 py-2">
                     Bowornthat Chiangthong
-                  </Button>
+                  </div>
                 </div>
                 <div className="space-y-1">
                   <Label htmlFor="location">Location</Label>
