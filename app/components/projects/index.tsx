@@ -5,36 +5,11 @@ import { Button } from "../ui/button";
 import { ArrowUpRightSquare } from "lucide-react";
 import Link from "next/link";
 import { motion } from "motion/react";
+import { projects } from "../data/data";
 
 export interface Projects {
   props: ProjectCardProps[];
 }
-
-// example Projects
-export const Data = [
-  {
-    id: "1",
-    title: "Discord Bot",
-    description:
-      "Programming Discord Bot for using in server to help doing simple tasks, improving thinking and coding skills.",
-    content: "Discord Bot",
-    image:
-      "https://th.bing.com/th/id/R.6dadd6a39af8ca284e56354ee099752e?rik=JXGf1AD1SgQOPg&pid=ImgRaw&r=0",
-    url: "",
-    tags: ["JavaScript", "Python", "Discord"],
-  },
-  {
-    id: "2",
-    title: "Cpp Lab",
-    description:
-      "Programming Discord Bot for using in server to help doing simple tasks, improving thinking and coding skills.",
-    content: "Cpp Lab",
-    image:
-      "https://th.bing.com/th/id/R.6dadd6a39af8ca284e56354ee099752e?rik=JXGf1AD1SgQOPg&pid=ImgRaw&r=0",
-    url: "",
-    tags: ["C++", "Python", "Discord"],
-  },
-];
 
 export const Projects = () => {
   return (
@@ -56,16 +31,10 @@ export const Projects = () => {
       </div>
       <div className="flex w-full flex-col items-center p-8 md:p-12">
         <div className="mb-8 grid grid-cols-1 justify-items-center gap-y-10 lg:grid-cols-2">
-          {Data.map((project) => (
+          {projects.map((project) => (
             <ProjectCard key={project.id} {...project} />
           ))}
         </div>
-        <Button variant={"default"} size={"lg"}>
-          <ArrowUpRightSquare className="mr-2 h-[1.2rem] w-[1.2rem]" />
-          <Link href="/projects" className="font-sesmibold">
-            View More
-          </Link>
-        </Button>
       </div>
     </motion.section>
   );

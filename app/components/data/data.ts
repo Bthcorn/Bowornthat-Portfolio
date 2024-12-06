@@ -1,4 +1,5 @@
 import { title } from "process";
+import { ProjectCardProps } from "../project-card";
 
 export const skilltech = [
   {
@@ -24,14 +25,6 @@ export const skilltech = [
         title: "TypeScript",
         icon: "devicon-typescript-plain",
       },
-      // {
-      //   title: "Golang",
-      //   icon: "devicon-go-plain",
-      // },
-      // {
-      //   title: "Java",
-      //   icon: "devicon-java-plain",
-      // },
     ],
   },
   {
@@ -114,4 +107,52 @@ export const skilltech = [
       }
     ],
   }
+];
+
+
+export const projects: ProjectCardProps[] = [
+  {
+    id: "1",
+    title: "SE Academy",
+    description:
+      "Online Learning Platform for Software Engineering Students to learn and review courses. This project is a part of Web Programming course at KMITL.",
+    content: "Web Programming, Team Project, Fullstack Development",
+    image:
+      "/images/se_academy_project.png",
+    url: "https://github.com/Bthcorn/se_academy_app_v2",
+    tags: ["React.js", "Javascript", "Tailwind CSS", "FastAPI", "PostgreSQL"],
+  },
+  {
+    id: "2",
+    title: "Portfolio Website",
+    description:
+      "Developing a personal portfolio website to showcase my projects and skills.",
+    content: "Web Development, Personal Project, Frontend Development",
+    image:
+      "/images/portfolio_website.png",
+    url: "",
+    tags: ["React.js", "Next.js", "Tailwind CSS", "TypeScript", "shadcn/ui"],
+  },
+  {
+    id: "3",
+    title: "Boardgame Booking Website",
+    description:
+      "Developing a website for booking boardgames, including user page, admin page, and backend. This used for applying for SAIG lab",
+    content: "Web Development, MERN stack, Fullstack Development",
+    image:
+      "/images/boardgame_booking_project.png",
+    url: "https://github.com/Bthcorn/saig-web-project",
+    tags: ["React.js", "Next.js", "Node.js", "Express.js", "MongoDB", "Prisma", "Tailwind CSS", "TypeScript", "shadcn/ui"],
+  },
+  {
+    id: "4",
+    title: "Data Scraping",
+    description:
+      "Simple web scraping project using Rust, CLI to scrape data from a website. This project is a part of Programming course at KMITL.",
+    content: "Programming, Simple Web Scraping, CLI",
+    image:
+      "/images/rust_project.png",
+    url: "https://github.com/Bthcorn/simple-webscraping",
+    tags: ["Rust", "Reqwest", "Scraper"],
+  },
 ];
