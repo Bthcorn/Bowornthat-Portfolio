@@ -41,7 +41,7 @@ export default function Header() {
 
   return (
     <header className="backdrop sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 max-w-screen-2xl items-center justify-between">
+      <div className="container flex h-14 max-w-screen-xl items-center justify-between">
         <div className="//hidden mr-4 flex">
           <Link href={"/"} className="flex items-center space-x-2">
             <svg
@@ -70,9 +70,9 @@ export default function Header() {
                 fill={currentColor}
               />
             </svg>
-            <span className="hidden text-2xl font-bold sm:inline-block">
+            {/* <span className="hidden text-2xl font-bold sm:inline-block">
               Bowornthat C.
-            </span>
+            </span> */}
           </Link>
         </div>
         <div className="flex">
