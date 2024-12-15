@@ -23,7 +23,7 @@ export const SkillCard = (props: SkillProps) => {
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger>
-            <i className={`${props.icon} text-5xl sm:text-7xl`}></i>
+            <i className={`${props.icon} text-5xl`}></i>
           </TooltipTrigger>
           <TooltipContent>
             <Tooltip>{props.title}</Tooltip>

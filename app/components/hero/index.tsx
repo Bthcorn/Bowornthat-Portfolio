@@ -18,7 +18,7 @@ export const Hero = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeOut", duration: 1 }}
-      className="relative my-8 flex min-h-screen w-full flex-col items-center justify-start gap-4 md:my-12 md:pt-40"
+      className="relative my-8 flex w-full flex-col items-center justify-start gap-4"
       id="hero"
     >
       <motion.h1
@@ -32,7 +32,7 @@ export const Hero = () => {
         }}
         className="inline-flex w-full justify-center text-5xl font-bold md:justify-start md:text-7xl"
       >
-        HI! <span className="animate-bounce">👋🏻</span>
+        Hi! <span className="animate-bounce">👋🏻</span>
       </motion.h1>
       <div className="flex w-full grid-cols-12 flex-col justify-between gap-x-2 gap-y-2 md:grid">
         <div className="col-span-7 mb-2 flex h-full min-h-40 justify-center md:justify-start">
@@ -80,8 +80,8 @@ export const Hero = () => {
           />
         </motion.div>
       </div>
-      <div className="mt-2 flex w-full flex-col items-stretch justify-center space-y-2 sm:flex-row sm:items-center sm:space-x-2 sm:space-y-0 md:justify-start">
-        <Button variant={"default"} size={"lg"}>
+      <div className="mt-2 flex w-72 flex-row items-center justify-between space-x-2 sm:w-full sm:items-start sm:justify-start">
+        <Button variant={"default"} size={"default"}>
           <ArrowUpRightFromSquareIcon className="mr-2 h-[1.2rem] w-[1.2rem]" />
           <Link
             href="mailto:bowornthat.chth@gmail.com"
@@ -90,28 +90,37 @@ export const Hero = () => {
             Let&apos;s Talk
           </Link>
         </Button>
-        <Button variant={"secondary"} size={"lg"}>
-          <Github className="mr-2 h-[1.2rem] w-[1.2rem]" />
+        <Button
+          variant={"outline"}
+          size={"icon"}
+          className="flex items-center text-muted-foreground hover:bg-secondary/80 hover:text-accent-foreground"
+        >
           <Link href="https://github.com/Bthcorn" className="font-semibold">
-            GitHub
+            <Github size={20} />
           </Link>
         </Button>
-        <Button variant={"secondary"} size={"lg"}>
-          <DownloadIcon className="mr-2 h-[1.2rem] w-[1.2rem]" />
+        <Button
+          variant={"outline"}
+          size={"icon"}
+          className="flex items-center text-muted-foreground hover:bg-secondary/80 hover:text-accent-foreground"
+        >
           <Link
             href="https://1drv.ms/b/c/b68d853b87857539/EUSxm_eYxXFMhxBlZ0-fXToBEERkkdND_ex86MP5pH-Tvw?e=daIZmg"
             className="font-sesmibold"
           >
-            Resume
+            <DownloadIcon size={20} />
           </Link>
         </Button>
-        <Button variant={"secondary"} size={"lg"}>
-          <LinkedinIcon className="mr-2 h-[1.2rem] w-[1.2rem]" />
+        <Button
+          variant={"outline"}
+          size={"icon"}
+          className="flex items-center text-muted-foreground hover:bg-secondary/80 hover:text-accent-foreground"
+        >
           <Link
             href="https://www.linkedin.com/in/bowornthat-chiangthong/"
             className="font-semibold"
           >
-            LinkedIn
+            <LinkedinIcon size={20} />
           </Link>
         </Button>
       </div>

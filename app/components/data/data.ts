@@ -142,7 +142,7 @@ export const projects: ProjectCardProps[] = [
     image:
       "/images/boardgame_booking_project.png",
     url: "https://github.com/Bthcorn/saig-web-project",
-    tags: ["React.js", "Next.js", "Node.js", "Express.js", "MongoDB", "Prisma", "Tailwind CSS", "TypeScript", "shadcn/ui"],
+    tags: ["Next.js", "Express.js", "MongoDB", "Prisma", "Tailwind CSS", "shadcn/ui"],
   },
   {
     id: "4",

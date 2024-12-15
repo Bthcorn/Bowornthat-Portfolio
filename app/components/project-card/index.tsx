@@ -37,7 +37,7 @@ export interface ProjectCardProps {
 
 export const ProjectCard = (props: ProjectCardProps) => {
   return (
-    <Card className="mx-4 w-80 justify-center overflow-hidden bg-background/95 drop-shadow-md backdrop-blur supports-[backdrop-filter]:bg-background/60 sm:w-96">
+    <Card className="w-full justify-center overflow-hidden bg-background/95 drop-shadow-md backdrop-blur supports-[backdrop-filter]:bg-background/60 sm:mx-4 sm:w-80">
       <AspectRatio ratio={16 / 9}>
         <motion.div className="absolute left-0 top-0 h-full w-full bg-gradient-to-b from-transparent to-secondary" />
         <motion.div
@@ -74,7 +74,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
       <CardFooter className="flex justify-end">
         <Dialog>
           <DialogTrigger asChild>
-            <Button variant={"secondary"} size={"lg"}>
+            <Button variant={"outline"} size={"default"}>
               Details
             </Button>
           </DialogTrigger>

@@ -18,19 +18,20 @@ export const Projects = () => {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 1 }}
       viewport={{ once: true }}
-      className="mb-8 flex min-h-screen w-full flex-col rounded-3xl bg-secondary"
+      className="mb-8 flex w-full flex-col rounded-3xl bg-secondary"
       id="projects"
     >
-      <div className="flex h-fit flex-col items-center justify-start gap-y-2 rounded-md p-6 sm:justify-center">
-        <p className="text-muted-foreground">portfolio</p>
-        <div className="w-full border-b-4 border-primary sm:w-auto">
-          <h1 className="font inline-flex p-3 text-3xl font-bold md:text-4xl">
-            MY RECENT WORK
+      <div className="flex h-fit flex-col items-start justify-start gap-y-2 rounded-md p-6">
+        <div className="w-full p-3 sm:w-auto">
+          <p className="text-muted-foreground">portfolio</p>
+          <h1 className="font inline-flex text-3xl font-bold md:text-4xl">
+            Project
           </h1>
+          <div className="border-b-4 border-primary"></div>
         </div>
       </div>
-      <div className="flex w-full flex-col items-center p-8 md:p-12">
-        <div className="mb-8 grid grid-cols-1 justify-items-center gap-y-10 lg:grid-cols-2">
+      <div className="flex w-full flex-col items-center p-8 pt-0">
+        <div className="mb-8 flex w-full flex-wrap justify-center gap-4">
           {projects.map((project) => (
             <ProjectCard key={project.id} {...project} />
           ))}

@@ -10,20 +10,20 @@ export const AboutMe = () => {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 1 }}
       viewport={{ once: true }}
-      className="mb-8 flex min-h-screen w-full flex-col items-center rounded-3xl bg-secondary"
+      className="mb-8 flex w-full flex-col items-start rounded-3xl bg-secondary"
       id="aboutme"
     >
-      <div className="flex h-fit flex-col items-center justify-start gap-y-2 rounded-md p-6 sm:justify-center">
-        <p className="text-muted-foreground">a little bit</p>
-        <div className="w-full sm:w-auto">
-          <h1 className="font inline-flex p-3 text-3xl font-bold md:text-4xl">
-            ABOUT ME
+      <div className="flex h-fit flex-col items-start justify-start gap-y-2 rounded-md p-6">
+        <div className="w-full p-3 sm:w-auto">
+          <p className="text-muted-foreground">a little bit</p>
+          <h1 className="font inline-flex text-3xl font-bold md:text-4xl">
+            About Me
           </h1>
           <div className="border-b-4 border-primary"></div>
         </div>
       </div>
-      <article className="text-seconday-foreground text-md h-fit w-full max-w-3xl whitespace-normal text-wrap p-8 font-light leading-loose tracking-wide sm:p-12 sm:text-lg">
-        <p className="flex leading-relaxed md:hidden">
+      <article className="text-seconday-foreground text-md h-fit w-full whitespace-normal text-wrap p-8 pt-0 font-light leading-loose tracking-wide sm:text-lg">
+        <p className="flex leading-relaxed">
           “Hello! I&apos;m a Second-Year Software Engineering student at KMITL,
           eager to advance my coding skills and stay updated with new
           technologies. I&apos;m looking for internships to apply my knowledge
@@ -31,7 +31,7 @@ export const AboutMe = () => {
           for learning and consistent effort. I&apos;m excited to contribute to
           your team. Please contact me if my portfolio interests you.”
         </p>
-        <div className="hidden flex-col gap-y-4 whitespace-normal leading-relaxed md:flex">
+        {/* <div className="hidden flex-col gap-y-4 whitespace-normal leading-relaxed md:flex">
           <motion.p
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -80,7 +80,7 @@ export const AboutMe = () => {
             hesitate to contact me. I am looking forward to the possibility of
             contributing to your company and growing as part of your team.
           </motion.p>
-        </div>
+        </div> */}
         <p className="mt-8 flex justify-end text-muted-foreground">
           Bowornthat Chiangthong
         </p>

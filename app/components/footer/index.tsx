@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="container mt-8 min-h-60 space-y-2 py-4 md:mt-12">
+    <footer className="container mt-8 min-h-60 max-w-screen-xl space-y-2 py-4 md:mt-12">
       <div className="w-full border-b-2 border-secondary text-center sm:w-auto">
         <h1 className="text-4xl font-bold leading-relaxed sm:text-5xl md:text-7xl">
           GET IN TOUCH

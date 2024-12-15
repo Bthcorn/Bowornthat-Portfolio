@@ -15,8 +15,9 @@ export const SkillCards = (props: SkillCardProps) => {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 1 }}
       viewport={{ once: true }}
+      className="w-full"
     >
-      <Card>
+      <Card className="w-full">
         <CardHeader>
           <CardTitle>
             <p>{props.title}</p>
